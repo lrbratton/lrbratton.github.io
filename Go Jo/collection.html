@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/GJScript.js"></script>
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Great+Vibes' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="header">
+	<img id="gojo_logo" src="GoJo_RStore.png" alt="Go Jo Recycled Store">	
+</div>
+
+<nav id="nav_bar">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="collection.html">Collection</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+
+<div id="body_div_text">
+	<p id="title">Our Collection</p>
+	<p id="subtitle">Contact us on (09) 826 3464 if something piques your interest!</p>
+	<div id="shop_gallery">
+		<div id="shop_item_1">
+			<img src="img/IMG_01.jpg" class="shop_img" alt="1970's American Boho Dress" width="250px">
+			<p id="shop_item_desc"> </p>
+		</div>
+	
+		<div id="shop_item_2">
+			<img src="img/IMG_02.jpg" class="shop_img" alt="Retro Nightie Size S/M" width="250px">
+			<p id="shop_item_desc"> </p>
+		</div>
+	
+		<div id="shop_item_3">
+			<img src="img/IMG_03.jpg" class="shop_img" alt="1960's Shirt-Dress Size 10" width="250px">
+			<p id="shop_item_desc"> </p>
+		</div>
+	
+		<div id="shop_item_4">
+			<img src="img/IMG_04.jpg" class="shop_img" alt="1990's Velvet Dress" width="250px">
+			<p id="shop_item_desc"> </p>
+		</div>
+	
+		<div id="shop_item_5">
+			<img src="img/IMG_05.jpg" class="shop_img" alt="1980's Polka Dot Dress Size 10" width="250px">
+			<p id="shop_item_desc"> </p>
+		</div>
+	
+		<div id="shop_item_6">
+			<img src="img/IMG_06.jpg" class="shop_img" alt="1960's Coat Size M" width="250px">
+			<p id="shop_item_desc"> </p>
+		</div>
+		
+		<div id="shop_item_7">
+			<img src="img/IMG_07.jpg" class="shop_img" alt="1960's Cocktail Dress" width="250px">
+			<p id="shop_item_desc"> </p>
+		</div>
+		
+		<div id="shop_item_8">
+			<img src="img/IMG_08.jpg" class="shop_img" alt="1960's Evening Dress" width="250px">
+			<p id="shop_item_desc"> </p>
+		</div>
+		
+		<div id="shop_item_9">
+			<img src="img/IMG_09.jpg" class="shop_img" alt="1950's Cocktail Dress" width="250px">
+			<p id="shop_item_desc"> </p>
+		</div>
+	</div>
+</div>
+
+<div id="myModal" class="modal">
+	<span class="close">&times;</span>
+	<img class="modal-content" id="img01">
+	<div id="caption"></div>
+</div>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left" align="left">
+
+				<div>
+					<i class="fa fa-map-marker" style="font-size:36px;"></i>
+					<p><strong>1 Riverbank Road<br> New Lynn, Auckland</strong></p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone" style="font-size:36px;"></i>
+					<p><br><strong>(09) 826 3464</strong></p>
+				</div>
+				
+				<div>
+					<i class="fa fa-clock-o" style="font-size:36px;"></i>
+					<p><br><strong>Hours:</strong><br><br>
+					Monday: Closed<br>
+					Tuesday - Friday: 10:00 - 4:30<br>
+					Saturday: 10:00 - 3:00<br>
+					Sunday: Closed<br></p>
+				</div>
+
+			</div>
+			
+			<div class="footer-center">
+				<iframe width=75% height="200" 
+				frameborder="0" style="border:0" 
+				src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqd63c0lBDW0Ren8911yUBdU&key=AIzaSyDzundhGMgB1B7COGogs3oPr65gVmhuors" allowfullscreen
+				></iframe>
+			
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					At Go Jo recycled clothing you will find everything from retro gear, to special event wear, smart casual and everything in between. 
+					Brands carried include some of the top NZ and overseas labels.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/gojostore"><i class="fa fa-facebook-square" style="font-size:36px;"></i></a>
+					<a href="https://www.instagram.com/gojo_store/"><i class="fa fa-instagram" style="font-size:36px;"></i></a>
+				</div>
+
+			</div>
+
+</footer>
+		
+
+</body>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.shop_img');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.shop_img').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Close modal if user clicks while modal is displayed
+var modal = document.getElementById('myModal');
+modal.addEventListener('click',function(){
+this.style.display="none";
+})
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+$(document).ready(function() {
+  
+  hdr = $("#header").height();
+  $(window).scroll(function () {
+     
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > hdr) {
+      $('#nav_bar').addClass('navbar-fixed');
+    }
+    else {
+      $('#nav_bar').removeClass('navbar-fixed');
+    }
+  });
+});
+
+
+</script>
+</html>
+
+
+
+
