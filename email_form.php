@@ -17,6 +17,6 @@
 	$to = "l.bratton@hotmail.co.nz";
 	$headers = "From: $email \r\n";
 	$headers = "Reply-To: $email \r\n";
-	mail($email,$email_subject,$email_body,$headers);
+	mail($to,$email_subject,$email_body,$headers);
 	header('Location: contact_success.html')
 ?>
