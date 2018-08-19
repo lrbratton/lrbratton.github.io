@@ -13,7 +13,7 @@
 
 #gojo_logo {
 	padding-top: 10px;
-	width:40vw;
+	width:80vw;
 	max-width:720px;
 	min-width: 400px;
 	margin: auto;
@@ -214,12 +214,14 @@ textarea {
 }
 
 #picture-jo {
-	float:left;
-	width:50%;
+	float: right;
+	margin-left:20px;
+	overflow:hidden;
+	min-width:50%;
 }
 
 #about-text {
-	float:right;
+	float:left;
 	width: 100px;
 	overflow: hidden;
 }
