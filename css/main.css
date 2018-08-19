@@ -214,16 +214,16 @@ textarea {
 }
 
 #picture-jo {
-	float: right;
-	margin-left:20px;
+	float: left;
+	margin-right:20px;
+	margin-bottom:20px;
 	overflow:hidden;
-	min-width:50%;
+	min-width:300px;
 }
 
 #about-text {
-	float:left;
-	width: 100px;
-	overflow: hidden;
+	float:right;
+	width:100px;
 }
 
 #about-content {
@@ -375,6 +375,9 @@ map {
 	#about-text {
 		clear: both;
 	}
+	
+	
+	
 }
 
 
