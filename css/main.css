@@ -181,7 +181,6 @@ textarea {
 #body_div_carousel,
 #body_div_text {
 	width:90vw;
-	min-width:800px;
 	font-family: Helvetica;
 	position: relative;
 	margin-top: 150px;
@@ -334,7 +333,6 @@ html{
 
 body{
 	min-height: 400px;
-	min-width: 800px;
 	clear: both;
 }
 
