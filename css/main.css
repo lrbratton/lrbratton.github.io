@@ -15,7 +15,7 @@
 	padding-top: 10px;
 	width:96vw;
 	max-width:720px;
-	min-width: 300px;
+	
 	margin: auto;
 	display:block;
 }
@@ -193,7 +193,7 @@ textarea {
 	display: block;
 	margin-left:auto;
 	margin-right: auto;
-	min-height: 800px;
+	
 	border-radius:5px;
 	float: center;
 
@@ -339,7 +339,6 @@ html{
 }
 
 body{
-	min-height: 400px;
 	clear: both;
 }
 
