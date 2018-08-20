@@ -175,7 +175,7 @@ li a:hover:not(.active) {
 }
 
 textarea {
-	width:300px;
+	width:270px;
 	height:150px;
 	resize:none;
 }
@@ -340,6 +340,7 @@ html{
 
 body{
 	clear: both;
+	width:100vw;
 }
 
 
