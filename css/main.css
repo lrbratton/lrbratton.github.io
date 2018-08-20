@@ -193,7 +193,6 @@ textarea {
 	display: block;
 	margin-left:auto;
 	margin-right: auto;
-	
 	border-radius:5px;
 	float: center;
 
@@ -202,12 +201,13 @@ textarea {
 #body_div_carousel {
 	width:98vw;
 	max-width:1366px; 
-	padding-top:100px;}
+	padding-top:100px;
+}
 	
 #body_div_text {
-	width:90vw;
+	width:100vw;
 	max-width:1000px; 
-	padding-right: 40px; 
+	margin-right:40px; 
 	padding-top:40px; 
 	padding-left:40px; 
 	background-color: #f2f2f2;
@@ -218,7 +218,7 @@ textarea {
 	margin-right:20px;
 	margin-bottom:20px;
 	overflow:hidden;
-	min-width:300px;
+	min-width:280px;
 }
 
 #about-text {
@@ -243,7 +243,7 @@ textarea {
 #about-layout {
 	display: flex;
 	flex-direction: row;
-	margin-left:35px;
+	margin-left:auto;
 } 
 
 #shop_item_1, #shop_item_4, #shop_item_7, #shop_item_2,  #shop_item_5,  #shop_item_8, #shop_item_3, #shop_item_6, #shop_item_9 {
@@ -366,10 +366,7 @@ map {
         width: 100vw;
     }
 	
-	#body_div_carousel,
-	#body_div_text {
-		width: 100vw;
-	}
+	
 	
 	#about-text {
 		clear: both;
