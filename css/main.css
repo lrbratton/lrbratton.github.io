@@ -41,9 +41,6 @@
 }
 
 
-
-
-
 #contact_form, #contact_content {
 	text-align:center;
 	font-family: 'Abhaya Libre', serif;
@@ -217,7 +214,7 @@ textarea {
 	float: left;
 	margin-right:20px;
 	margin-bottom:20px;
-	overflow:hidden;
+	position: relative;
 	min-width:280px;
 }
 
@@ -229,7 +226,6 @@ textarea {
 #about-content {
 	font-family: 'Abhaya Libre', serif;
 	font-size: 18px;
-	padding-left:40px;
 }
 
 #shop_gallery {
@@ -368,14 +364,13 @@ map {
     }
 	
 	#body_div_text {
-		padding-left:auto;
-		padding-right: auto;
+		padding-left:20px;
+		
 	}
 	
 	#about-text {
 		clear: both;
 	}
-	
 	
 	
 }
