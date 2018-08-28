@@ -204,9 +204,9 @@ textarea {
 #body_div_text {
 	width:100%;
 	max-width:1000px; 
-	padding-right:40px; 
+	padding-right:3vw; 
 	padding-top:40px; 
-	padding-left:40px; 
+	padding-left:3vw;
 	background-color: #f2f2f2;
 }
 
@@ -220,7 +220,7 @@ textarea {
 
 #about-text {
 	float:right;
-	width:100px;
+	
 }
 
 #about-content {
@@ -364,8 +364,7 @@ map {
     }
 	
 	#body_div_text {
-		padding-left:auto;
-		padding-right: auto;
+		max-padding-left: 3px;
 		
 	}
 	
