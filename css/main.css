@@ -77,7 +77,7 @@
 	text-align:center;
 	width:100%;
 	display:block;
-	margin-left:200px;
+	margin-left:30vw;
 	margin-right:auto;
 }
 
@@ -180,7 +180,8 @@ textarea {
 
 
 #body_div_carousel,
-#body_div_text {
+#body_div_text,
+#body_div_collection {
 	
 	font-family: Helvetica;
 	position: relative;
@@ -201,7 +202,8 @@ textarea {
 	padding-top:100px;
 }
 	
-#body_div_text {
+#body_div_text,
+#body_div_collection {
 	width:100%;
 	max-width:1000px; 
 	padding-right:3vw; 
@@ -372,8 +374,9 @@ map {
 		
 	}
 	
-	#collection_img {
-		margin-left:5vw;
+	#body_div_collection {
+		padding-left:4vw;
+		padding-right:4vw;
 	}
 	
 	#about-text {
