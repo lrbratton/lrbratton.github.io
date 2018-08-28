@@ -2,7 +2,7 @@
 	background-color: #202020;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
-	text-align: left;
+	text-align: center;
 	font:  14px Helvetica;
 	padding: 55px 50px;
 }
@@ -26,7 +26,7 @@
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
-	text-align: left;
+	text-align: center;
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
@@ -97,7 +97,7 @@
 	color:  #f2f2f2;
 	font-size: 15px;
 	font-weight: normal;
-	text-align: left;
+	text-align: center;
 	margin: 0;
 }
 
@@ -111,7 +111,7 @@
 
 .footer-distributed .footer-icons{
 	margin-top: 25px;
-	text-align: left;
+	text-align: center;
 
 }
 
