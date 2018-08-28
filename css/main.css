@@ -36,7 +36,7 @@
 #shop_item_desc {
 	text-align:center;
 	font-family: 'Abhaya Libre', serif;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 
@@ -131,6 +131,7 @@ li a {
 li .active {
 	background-color: White;
 	color: black;
+	text-decoration: none;
 }
 
 li a:hover:not(.active) {
