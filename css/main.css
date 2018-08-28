@@ -364,7 +364,8 @@ map {
     }
 	
 	#body_div_text {
-		padding-left:0px;
+		padding-left:0.5vw;
+		padding-right:0.5vw;
 	}
 	
 	#picture-jo {
