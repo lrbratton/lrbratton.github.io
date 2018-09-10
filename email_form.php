@@ -1,10 +1,7 @@
 <?php
 	
-
-	if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		$email = $_POST['email'];
-	}
-	
+	$email = $_POST['email'];
+	$email = filter_var($email, FILTER_SANITIZE_EMAIL);
 	$name = $_POST['name'];
 	$ph_no = $_POST['ph_no'];
 	$comment = $_POST['comment'];
