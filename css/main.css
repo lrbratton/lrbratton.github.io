@@ -78,10 +78,22 @@
 	
 	.content-form {
 		margin-left:0px;
+		
 	}
 	
 	.title {
 		font-size: 16.5vw;
+	}
+	
+	.subtitle {
+		font-size: 10vw;
+	}
+	
+	textarea {
+		resize:none;
+		
+		width:180px;
+		height:100px;
 	}
 
 }
@@ -93,7 +105,7 @@
 
 textarea {
 	resize:none;
-	width: 280px;
+	width: 220px;
 }
 
 .img-content {
