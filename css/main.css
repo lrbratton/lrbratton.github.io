@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
 
+.main-div {
+	max-width:95vw;
+}
+
 .title {
 	padding-top:100px;
 	text-align:center;
@@ -61,6 +65,7 @@
 		border-bottom: 1px solid #bbb;
 		padding-bottom: 60px;
 		margin-bottom:60px;
+		padding-right:0px;
 	}
 	
 	.content-webdesc {
@@ -70,6 +75,15 @@
 	.content-img {
 		padding-top: 35px;
 	}
+	
+	.content-form {
+		margin-left:0px;
+	}
+	
+	.title {
+		font-size: 16.5vw;
+	}
+
 }
 
 .content-form {
