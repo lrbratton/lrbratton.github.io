@@ -39,7 +39,7 @@
 }
 
 #service {
-    background-color: #333333;
+    background-color: #cccccc;
 }
 
 #service-content {
@@ -127,7 +127,7 @@ ul {
     }
     
     #contact-form {
-        margin-top:10px;
+        margin-top:0;
         border-right: none;
         border-bottom: 1px solid #bbb;
         padding-bottom: 40px;
@@ -135,6 +135,10 @@ ul {
     
     .text-content {
         padding-top: 35px;
+    }
+    
+    #service-content {
+        padding-top: 50px;
     }
 
 }

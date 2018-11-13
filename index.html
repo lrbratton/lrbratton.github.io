@@ -14,7 +14,41 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+        <script>
+            
+            var formApp = angular.module('formApp', []);
+            
+            function formController($scope, $http) {
+                
+                $scope.formData = {};
+                
+                $scope.processForm = function() {
+                    $http({
+                        method  : 'POST',
+                        url     : 'php/contact-process.php',
+                        data    : $.param($scope.formData),
+                        headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
+                    })
+                    
+                .success(function(data) {
+                    console.log(data);
+            
+                    if(!data.success) {
+                        $scope.errorName = data.errors.name;
+                        $scope.errorEmail = data.errors.email;
+                        $scope.errorComment = data.errors.comment;
+                    } else {
+                        $scope.message = data.message;
+                        $scope.errorName = '';
+                        $scope.errorEmail = '';
+                        $scope.errorComment = '';
+                    }
+                    
+                    });
+                };
+            }
+        </script>
         
     </head>
     <body>
