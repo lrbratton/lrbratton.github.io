@@ -95,5 +95,22 @@ ul {
     #navbar {
         font-size: 10vw;
     }
+    
+    .heading {
+        font-size: 7vw;
+    }
+    
+    .sub-heading {
+        font-size: 4vw;
+    }
+}
 
+@media only screen and (max-width: 553px) {
+    .heading {
+        font-size: 7vw;
+    }
+    
+    .service-content {
+        padding-top: 10px;
+    }
 }
