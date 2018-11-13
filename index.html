@@ -31,7 +31,7 @@ and open the template in the editor.
                     </li>
                     
                     <li class="nav-item">                    
-                        <a class="nav-link" href="#services"><i class="fas fa-wrench"></i> </a>
+                        <a class="nav-link" href="#service"><i class="fas fa-wrench"></i> </a>
                     </li>
                     
                     <li class="nav-item">
@@ -47,8 +47,8 @@ and open the template in the editor.
                 
                 <div class="row vertical-align">
                     <div class="col-sm-12" id="subtitle">
-                        <h1>APOLLO ELECTRICAL LIMITED</h1>
-                        <h2>Commercial, Industrial, Domestic</h2>
+                        <p class="heading">APOLLO   ELECTRICAL   LIMITED</p>
+                        <p class="sub-heading">Commercial, Industrial, Domestic</p>
                     </div>
                     
                     <div class="col-sm-12" >
@@ -58,19 +58,31 @@ and open the template in the editor.
             </div>
         </div>
         
-        <div class="content" id="services">
+        <div class="content" id="service">
             <div class="container">
-                <div class ="row">
-                    <div class="col-sm-4 services" id="service-1">
-                        <img src="img/GH.png">
+                <div class="row">
+                    <div class="col-sm-12" id="subtitle">
+                        <p class="heading">Services</p>
+                    </div>
+                </div>
+                
+                <div class ="row" id="service-content">
+                    <div class="col-sm-4">
+                        <div class="services">
+                            <img class="services-img" src="img/GH.png">
+                        </div>
                     </div>
 
-                    <div class="col-sm-4 services" id="service-2">
-                        <img src="img/GH.png">
+                    <div class="col-sm-4" >
+                        <div class="services">
+                            <img class="services-img" src="img/GH.png">
+                        </div>
                     </div>
 
-                    <div class="col-sm-4 services" id="service-3">
-                        <img src="img/GH.png">
+                    <div class="col-sm-4" >
+                        <div class="services">
+                            <img class="services-img" src="img/GH.png">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,7 +91,13 @@ and open the template in the editor.
         <div class="content" id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-5" id="contact-form">
+                    <div class="col-sm-12" id="subtitle">
+                        <p class="heading">Contact</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6" id="contact-form">
                             <form ng-submit="processForm()">
                                 <div id="name-group" class="form-group" ng-class="{'has-error' : errorName}"><br>
                                     <label>Name:</label><br>
