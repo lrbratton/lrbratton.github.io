@@ -1,37 +1,47 @@
  @import url('https://fonts.googleapis.com/css?family=Michroma');
 
 .content {
-    height:100vh;
     width:100%;
     margin:0;
-    padding: 0;
-    padding-left:35px;
+    padding:0;
+    padding-left:120px;
+    
 
-}
-
-.nav-item {
-    width:60px;
-}
-
-.nav-link {
-    color: yellow;
 }
 
 #title {
     background-color: whitesmoke;
+    height:100vh;
+    overflow: hidden;
     
 }
+
+#service {
+    height: 130vh;
+}
+
+#contact {
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.fas {
+    font-size: 50px;
+}
+
+
 
 .heading {
     font-family: 'Michroma', sans-serif;
     font-size: 50px;
 }
 
-.sub-heading {
+.sub-heading, .service-heading {
     font-family: 'Michroma', sans-serif;
     font-style: italic;
     font-size:24px;
 }
+
 
 .text-content {
     font-family: 'Michroma', sans-serif;
@@ -47,7 +57,9 @@
 }
 
 .services {  
-    max-width: 1000px;  
+    max-width: 1000px;
+    margin-bottom: 30px;
+    padding-right: 30px;
 }
 
 .services-img {
@@ -56,8 +68,11 @@
     margin-right: 15px;
 }
 
-#contact {
-    background-color: whitesmoke;
+.service-description {
+    font-family: 'Michroma', sans-serif;
+    font-size:18px;
+    padding-top: 15px;
+    padding-bottom:50px;
 }
 
 #subtitle {
@@ -66,8 +81,7 @@
 }
 
 #home-carousel {
-    max-width:800px;
-    width: 60vw;
+    width:100vw;
 }
 
 .vertical-align {
@@ -81,20 +95,8 @@
     border-right: 1px solid #bbb;
 }
 
-.navbar-nav {
-    background-color: whitesmoke;
-    width:55px;
-    border-radius:0px 0px 5px 5px;
-    border-bottom: 2px solid whitesmoke;
-}
 
-.navbar-toggler-icon {
-    background-color: whitesmoke;
-}
 
-ul {
-   font-size: 48px;
-}
 
 
 @media only screen and (max-width: 700px) {
@@ -110,6 +112,15 @@ ul {
     .text-content {
         font-size: 4vw;
     }
+    
+    .fas {
+        font-size: 8vw;
+    }
+    
+    .content {
+        padding-left: 12vw;
+    }
+    
 }
 
 @media only screen and (max-width: 575px) {
@@ -122,9 +133,6 @@ ul {
         font-size: 5vw;
     }
     
-    .service-content {
-        padding-top: 10px;
-    }
     
     #contact-form {
         margin-top:0;
@@ -138,7 +146,11 @@ ul {
     }
     
     #service-content {
-        padding-top: 50px;
+        padding-top: 0px;
+    }
+   
+    #service {
+        height: 160vh;
     }
 
 }

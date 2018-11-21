@@ -53,36 +53,32 @@ and open the template in the editor.
     </head>
     <body>
         
-        <nav class="navbar navbar-light navbar-default fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAlt" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarAlt">
-                <ul class="navbar-nav">
-                    
+
+        <nav class="navbar navbar-light fixed-top">
+            
+            <div class="navbar-default">
+                <ul class="navbar-nav">                   
                     <li class="nav-item">
                         <a class="nav-link" href="#title"><i class="fas fa-home"></i></a>
                     </li>
-                    
                     <li class="nav-item">                    
-                        <a class="nav-link" href="#service"><i class="fas fa-wrench"></i> </a>
-                    </li>
-                    
+                        <a class="nav-link" href="#service"><i class="fas fa-wrench"></i></a>
+                    </li>                   
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact"><i class="fas fa-phone"></i> </a>
-                    </li>
-                    
+                        <a class="nav-link" href="#contact"><i class="fas fa-phone"></i></a>
+                    </li>                    
                 </ul>
             </div>
         </nav>
         
+        
         <div class="content" id="title">
-            <div class="container">
+            <div class="container-fluid">
                 
-                <div class="row vertical-align">
+                <div class="row">
                     <div class="col-sm-12" id="subtitle">
                         <p class="heading">APOLLO   ELECTRICAL   LIMITED</p>
-                        <p class="sub-heading">Commercial, Industrial, Domestic</p>
+                        <p class="sub-heading">Domestic & Commercial - Registered Electrician</p>
                     </div>
                     
                     <div class="col-sm-12" >
@@ -93,7 +89,7 @@ and open the template in the editor.
         </div>
         
         <div class="content" id="service">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12" id="subtitle">
                         <p class="heading">Services</p>
@@ -101,17 +97,47 @@ and open the template in the editor.
                 </div>
                 
                 <div class ="row" id="service-content">
-                    <div class="col-sm-12">
+                    <div class="col-sm-4">
                         <div class="services">
+                            <p class="service-heading">Domestic</p>
                             <img class="services-img" src="img/GH.png">
+                            <ul class="service-description">
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="services">
+                            <p class="service-heading">Commercial</p>
+                            <img class="services-img" src="img/GH.png">
+                            <ul class="service-description">
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                            </ul>                        
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="services">
+                            <p class="service-heading">Golden Homes</p>
+                            <img class="services-img" src="img/GH.png">
+                            <ul class="service-description">
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="content" id="contact">
-            <div class="container">
+        <div class="content" id="contact" ng-app="formApp" ng-controller="formController">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12" id="subtitle">
                         <p class="heading">Contact</p>
