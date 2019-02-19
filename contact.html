@@ -53,7 +53,7 @@
         <img class="header-img" src="Logo/Logo Final.png"/>
     </div>
 
-    <nav id="nav_bar">
+    <nav class="nav_bar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">About Us</a></li>
@@ -74,7 +74,7 @@
                             <p class="content">
                                 At Swanson Worx we guarantee quality and professional service. If your vehicle is running a little low or just needs some tender love & care, head on down to Swanson Worx.
                             </p>
-                            <img class="img-owners" src="Img/owners.jpg">
+                            <img class="img-owners" alt="Ritchie & Lana" src="Img/owners.jpg">
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                     <p class="title">CONTACT</p> 
                     <div class="row">
                         <div class="col-sm-12" id="contact-form">
-                            <p class="content">Our opening hours are <strong>7:30am - 5:00pm</strong> on weekdays. You can find us at <strong>720D Swanson Road, Swanson</strong>. We are based beside the Challenge petrol station in the Swanson township.</p>
+                            <p class="content">Our opening hours are <strong>7:30am - 5:00pm</strong> on weekdays. You can find us at <strong>720D Swanson Road</strong>, based beside the Challenge petrol station in the Swanson township.</p>
                             <p class="content">If you are looking to get in contact with us during these hours you are welcome to call us on <strong>09 833 9988</strong></p>
                             <p class="content">Outside of these hours you are welcome to make a submission below, or email us directly at <strong>swansonworx@gmail.com</strong></p>
                             <form ng-submit="processForm()">
@@ -169,10 +169,10 @@ $(document).ready(function() {
      
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > hdr) {
-      $('#nav_bar').addClass('navbar-fixed');
+      $('.nav_bar').addClass('navbar-fixed');
     }
     else {
-      $('#nav_bar').removeClass('navbar-fixed');
+      $('.nav_bar').removeClass('navbar-fixed');
     }
   });
 });
