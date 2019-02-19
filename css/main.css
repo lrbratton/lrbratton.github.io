@@ -71,6 +71,7 @@ body {
 }
 
 .title {
+        
 	text-align:center;
 	font: 400 72px/0.8 'Oswald', sans-serif;
 	color: black;
@@ -332,7 +333,11 @@ map {
 		clear: both;
 	}
 	
-        .title, .subtitle {
+        .title {
+            padding-top: 65px;
+        }
+        
+        .subtitle {
             padding-top: 35px;
         }
 	
