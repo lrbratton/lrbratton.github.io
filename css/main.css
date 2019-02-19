@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:600');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
-
+ @import url('https://fonts.googleapis.com/css?family=Oswald');
 @font-face {
     font-family: Agency B;
     src: url ('agencyb.ttf');
@@ -72,7 +72,7 @@ body {
 
 .title {
 	text-align:center;
-	font: 400 72px/0.8 AgencyB, License Plate, Impact;
+	font: 400 72px/0.8 'Oswald', sans-serif;
 	color: black;
 	text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
         letter-spacing: 0.0625em;
@@ -81,7 +81,7 @@ body {
 
 .subtitle {
 	text-align:center;
-	font: 400 40px/0.8 AgencyB, License Plate, Impact;
+	font: 400 40px/0.8 'Oswald', sans-serif;
 	color: black;
 	text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
         padding-bottom: 15px;
@@ -159,7 +159,7 @@ ul {
 
 li {
     float: left;
-    font-family: AgencyB, License Plate, Impact;
+    font-family: 'Oswald', sans-serif;
     font-size: 22px;
     text-decoration: none;
     letter-spacing: 0.0625em;
@@ -230,7 +230,7 @@ textarea {
 #body_div_text {	
 	font-family: Helvetica;
 	position: relative;
-	margin-top: 150px;
+	margin-top: 200px;
 	overflow: hidden;
 	display: block;
 	margin-left:auto;
@@ -245,7 +245,6 @@ textarea {
 #body_div_carousel {
 	width:96%;
 	max-width:1366px; 
-	margin-top:150px;
 }
 	
 #body_div_text{
