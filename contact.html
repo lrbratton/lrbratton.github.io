@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swanson Worx | Contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/GJScript.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script>
+            
+            var formApp = angular.module('formApp', []);
+            
+            function formController($scope, $http) {
+                
+                $scope.formData = {};
+                
+                $scope.processForm = function() {
+                    $http({
+                        method  : 'POST',
+                        url     : 'php/contact-process.php',
+                        data    : $.param($scope.formData),
+                        headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
+                    })
+                    
+                .success(function(data) {
+                    console.log(data);
+            
+                    if(!data.success) {
+                        $scope.errorName = data.errors.name;
+                        $scope.errorEmail = data.errors.email;
+                        $scope.errorComment = data.errors.comment;
+                    } else {
+                        $scope.message = data.message;
+                        $scope.errorName = '';
+                        $scope.errorEmail = '';
+                        $scope.errorComment = '';
+                    }
+                    
+                    });
+                };
+            }
+        </script>
+</head>
+<body ng-app="formApp" ng-controller="formController">
+
+    <div id="header">
+        <img class="header-img" src="Logo/Logo Final.png"/>
+    </div>
+
+    <nav id="nav_bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="body_div_text">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-5">
+                    <p class="title">ABOUT US</p>
+                    <div class="row">
+                        <div class="col-sm-11 content-contact">
+                            <p class="content">
+                                Swanson Worx is a locally owned mechanical and tyre workshop founded on experience and a passion for motor vehicles. 
+                            </p>
+                            <p class="content">
+                                At Swanson Worx we guarantee quality and professional service. If your vehicle is running a little low or just needs some tender love & care, head on down to Swanson Worx.
+                            </p>
+                            <img class="img-owners" src="Img/owners.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-5" >
+                    <p class="title">CONTACT</p> 
+                    <div class="row">
+                        <div class="col-sm-12" id="contact-form">
+                            <p class="content">Our opening hours are <strong>7:30am - 5:00pm</strong> on weekdays. You can find us at <strong>720D Swanson Road, Swanson</strong>. We are based beside the Challenge petrol station in the Swanson township.</p>
+                            <p class="content">If you are looking to get in contact with us during these hours you are welcome to call us on <strong>09 833 9988</strong></p>
+                            <p class="content">Outside of these hours you are welcome to make a submission below, or email us directly at <strong>swansonworx@gmail.com</strong></p>
+                            <form ng-submit="processForm()">
+                                <div id="name-group" class="form-group" ng-class="{'has-error' : errorName}"><br>
+                                    <label>Name:</label><br>
+                                    <input type="text" name="name" class="form-control" ng-model="formData.name" style="width:100%">
+                                    <span class="help-block" ng-show="errorName">{{ errorName }}</span><br>
+                                </div>
+
+                                <div id="email-group" class="form-group" ng-class="{'has-error' : errorEmail}">
+                                    <label>Email:</label><br>
+                                    <input type="text" name="email" class="form-control" ng-model="formData.email"  style="width:100%">
+                                    <span class="help-block" ng-show="errorEmail">{{ errorEmail }}</span><br>
+                                </div>
+
+                                <div id="message-group" class="form-group" ng-class="{'has-error' : errorComment}">
+                                    <label>Message:</label><br>
+                                    <textarea type="text" name="comment" class="form-control" ng-model="formData.comment" style="width:100%"></textarea>
+                                    <span class="help-block" ng-show="errorComment">{{ errorComment }}</span><br>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg">Submit</button><br>
+                            </form>
+                            <div id="messages" class="well" ng-show="message">{{ message }}</div>
+                        </div>
+                    </div>
+                </div>  
+            </div>            
+        </div>
+    </div>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <p class="footer-company-about">
+                <span><strong>About</strong></span>
+                From light commercial to passenger vehicles, modern European to American classics, and everything in between! Swanson Worx is here to help with your automotive needs.
+            </p>
+
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/swansonworx"><i class="fa fa-facebook-square" style="font-size:36px;"></i></a>
+            </div>
+            
+
+        </div>
+
+        <div class="footer-center">
+            <iframe width=75% height="200" 
+                    frameborder="0" style="border:0" 
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-SLGDPFqDW0RM-UyJrfq3Y4&key=AIzaSyDzundhGMgB1B7COGogs3oPr65gVmhuors" allowfullscreen
+                    ></iframe>
+
+        </div>
+
+        <div class="footer-right">
+            <div>
+                <p><strong>720D Swanson Road<br> Swanson, Auckland</strong></p>
+            </div>
+
+            <div>
+
+                <p><br><strong>(09) 833 9988</strong></p>
+            </div>
+
+            <div>
+                <p><br><strong>Hours:</strong><br><br>
+                    Monday - Friday: 7:30am - 5pm<br>
+                    Saturday - Sunday: Closed<br>
+                </p>
+            </div>
+            
+        </div>
+
+    </footer>
+		
+
+</body>
+<script>
+$(document).ready(function() {
+  
+  hdr = $("#header").height();
+  $(window).scroll(function () {
+     
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > hdr) {
+      $('#nav_bar').addClass('navbar-fixed');
+    }
+    else {
+      $('#nav_bar').removeClass('navbar-fixed');
+    }
+  });
+});
+
+
+var frmvalidator  = new Validator("contact_form");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+
+</script>
+</html>
+
+

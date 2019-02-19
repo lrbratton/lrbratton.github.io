@@ -1,156 +1,344 @@
- @import url('https://fonts.googleapis.com/css?family=Michroma');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:600');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
 
-.content {
+@font-face {
+    font-family: Agency B;
+    src: url ('agencyb.ttf');
+}
+
+@font-face {
+    font-family: License Plate;
+    src: url ('licenseplate.ttf');
+}
+
+#header {
+	width:100%;
+	overflow:hidden;
+	height:300px;
+	background-color: white;
+	text-align: center;
+	
+}
+
+body {
+    background-color: #f26522;
+    clear: both;
     width:100%;
-    margin:0;
-    padding:0;
-    padding-left:120px;
-    
-
 }
 
-#title {
-    background-color: whitesmoke;
-    height:100vh;
-    overflow: hidden;
-    
+.header-img {
+    padding-top: 25px;
+    max-height: 100%;
+    max-width: 100%;
 }
 
-#service {
-    height: 130vh;
+.navbar-title {
+	font-size: 160px;
+	color: white;
+	margin:0 !important;
+	padding:0;
+	line-height: 1;
+	font: arial;
 }
 
-#contact {
-    background-color: whitesmoke;
-    height: 100vh;
+.navbar-subtitle {
+	font-size: 68px;
+	color: white;
+	margin:0 !important;
+	padding:0;
+	line-height: 0.8;
+	font: arial;
 }
 
-.fas {
-    font-size: 50px;
+.content, .content-home {
+    text-align: center;
+    font-family: Helvetica;
 }
 
-
-
-.heading {
-    font-family: 'Michroma', sans-serif;
-    font-size: 50px;
+.content-home {
+    padding-top: 75px;
 }
 
-.sub-heading, .service-heading {
-    font-family: 'Michroma', sans-serif;
-    font-style: italic;
-    font-size:24px;
+.content-home a {
+    text-decoration: none;
+    color: #f26522;
 }
 
-
-.text-content {
-    font-family: 'Michroma', sans-serif;
-    font-size:24px;
+.content-home a:hover {
+    color: black;
 }
 
-#service {
-    background-color: #cccccc;
+.title {
+	text-align:center;
+	font: 400 72px/0.8 AgencyB, License Plate, Impact;
+	color: black;
+	text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+        letter-spacing: 0.0625em;
+        padding-bottom: 45px;
 }
 
-#service-content {
-    padding-top: 150px;
+.subtitle {
+	text-align:center;
+	font: 400 40px/0.8 AgencyB, License Plate, Impact;
+	color: black;
+	text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+        padding-bottom: 15px;
 }
 
-.services {  
-    max-width: 1000px;
-    margin-bottom: 30px;
-    padding-right: 30px;
+.img-owners {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
-.services-img {
-    
-    border: 1px solid white;
-    margin-right: 15px;
+#shop_item_desc {
+	text-align:center;
+	font-family: 'Abhaya Libre', serif;
+	font-size: 18px;
 }
 
-.service-description {
-    font-family: 'Michroma', sans-serif;
-    font-size:18px;
-    padding-top: 15px;
-    padding-bottom:50px;
-}
-
-#subtitle {
-    margin-top:100px;
-    margin-bottom:50px;
-}
-
-#home-carousel {
-    width:100vw;
-}
-
-.vertical-align {
-    display: flex;
+.list-group-item {
+    text-align: center;
 }
 
 #contact-form {
-    margin-top:50px;
-    float:right;
-    padding-right:100px;
-    border-right: 1px solid #bbb;
+	text-align:center;
+	font-family: Helvetica;
+	font-size: 16px;
+}
+
+#comment_box {
+	height:200px;
+}
+
+.nav_bar {
+	border: 0;
+	border-radius: 0px;
+	height: 50px;
+	margin-bottom: -50px;
+	box-shadow: 0 4px 2px -2px gray;
+
+}
+
+#collection_img {
+	text-align:center;
+	width:100%;
+	display:block;
+	margin-left:30vw;
+	margin-right:auto;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar-fixed {
+	top: 0;
+	z-index: 100;
+	position: fixed;
+	width:100%;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    width: 100%;
+}
+
+li {
+    float: left;
+    font-family: AgencyB, License Plate, Impact;
+    font-size: 22px;
+    text-decoration: none;
+    letter-spacing: 0.0625em;
+
+}
+
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li .active {
+	background-color: black;
+	color: #d66837;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #f26522;
+	text-decoration: none;
+	color: black;
+}
+
+#carousel-div {
+	position: relative;
+	
+}
+
+.carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .6s;
+ transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+ transform: translateX(0);
+ transform: translate3d(0, 0, 0);
+}
+
+textarea {
+	width:270px;
+	height:150px;
+	resize:none;
 }
 
 
 
-
-
-@media only screen and (max-width: 700px) {
-
-    .heading {
-        font-size: 7vw;
-    }
-    
-    .sub-heading {
-        font-size: 4vw;
-    }
-    
-    .text-content {
-        font-size: 4vw;
-    }
-    
-    .fas {
-        font-size: 8vw;
-    }
-    
-    .content {
-        padding-left: 12vw;
-    }
-    
-}
-
-@media only screen and (max-width: 575px) {
-    
-    .heading {
-        font-size: 8vw;
-    }
-    
-    .sub-heading {
-        font-size: 5vw;
-    }
-    
-    
-    #contact-form {
-        margin-top:0;
-        border-right: none;
-        border-bottom: 1px solid #bbb;
-        padding-bottom: 40px;
-    }
-    
-    .text-content {
-        padding-top: 35px;
-    }
-    
-    #service-content {
-        padding-top: 0px;
-    }
-   
-    #service {
-        height: 250vh;
-    }
+#body_div_carousel,
+#body_div_text {	
+	font-family: Helvetica;
+	position: relative;
+	margin-top: 150px;
+	overflow: hidden;
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	border-radius:5px;
+        -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
 
 }
+
+#body_div_carousel {
+	width:96%;
+	max-width:1366px; 
+	margin-top:150px;
+}
+	
+#body_div_text{
+	width:100%;
+	max-width:1366px; 
+	padding-right:3vw; 
+	padding-top:40px; 
+	padding-left:3vw;
+	background-color: white;
+        padding-bottom: 30px;
+}
+
+#about-text {
+	float:right;
+	
+}
+
+#about-content {
+	font-family: 'Abhaya Libre', serif;
+	font-size: 18px;
+}
+
+#shop_gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left:35px;
+	margin-top: 50px;
+}
+
+#about-layout {
+	display: flex;
+	flex-direction: row;
+	margin-left:auto;
+} 
+
+
+html{
+	background-color: #eaf0f2;
+}
+
+
+footer{
+	margin-top: 150px;
+	background-color: #2f2f2f;
+	position: relative;
+	bottom: 0;
+}
+
+
+.carousel-div {
+	width: 9px;
+}
+
+map {
+        height: 100%;
+		width: 100%;
+      }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 575px){
+	.navbar-title {
+		font-size: 23vw;
+	}
+	
+	.navbar-subtitle {
+		font-size: 10vw;
+	}
+	
+    .modal-content {
+        width: 100vw;
+    }
+	
+	#body_div_text {
+		padding-left:1vw;
+		padding-right:1vw;
+	}
+	
+	
+	#body_div_collection {
+		padding-left:4vw;
+		padding-right:4vw;
+	}
+	
+	#about-text {
+		clear: both;
+	}
+	
+        .title, .subtitle {
+            padding-top: 25px;
+        }
+	
+}
+
+
+	  

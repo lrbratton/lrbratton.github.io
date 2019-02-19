@@ -1,0 +1,3 @@
+carousel on home page lagging - potentially lower resolution of images or look for alternate solution
+
+contact page needs a confirmation message for user benefit

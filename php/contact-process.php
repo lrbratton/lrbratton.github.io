@@ -38,7 +38,7 @@
             $data['success'] = false;
             $data['errors']  = $errors;
     } else {
-            $email_subject = "Apollo Electrical Webmail";
+            $email_subject = "LazarusRB Email";
             $email_body = "Hi,\n\n You have received a new email from $name.\n".
                                     "Here is the message:\n $comment.\n".
                                     "$name's email is $email";
